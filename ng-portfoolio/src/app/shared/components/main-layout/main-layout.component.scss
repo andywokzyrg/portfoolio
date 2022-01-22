@@ -22,6 +22,16 @@
     color: black;
     text-transform: uppercase;
     font-weight: bold;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.header-logo {
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .header-nav-link {
@@ -35,5 +45,40 @@
 .header-nav {
     display: flex;
     justify-content: space-between;
+}
 
+.contacts {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 50px;
+    left: 70px;
+}
+
+.contacts-link {
+    margin-right: 5rem;
+    margin-left: 0.5rem;
+    color: white;
+    text-decoration: none;
+
+}
+
+.contacts-link:hover {
+    text-decoration: underline;
+    color: rgba(38,255,231,1)
+}
+
+@media (max-width: 690px) {
+    .header-logo {
+        display: none;
+    }
+
+    .header-brand {
+        display: none;
+    }
+
+    .header-nav {
+        margin-top: 1.7rem;
+        margin-bottom: 1.7rem;
+    }
 }

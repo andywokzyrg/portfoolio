@@ -2,23 +2,34 @@
     <header class="header">
         <div class="container">
             <div class="header-inner">
-                <div class="header-brand">
+                <div class="header-brand" routerLink="/">
                     О нет только не это
                 </div>
 
-                <img class="header-logo" src="../../../../assets/logo.png" alt="logo" height="80px" width="80px" >
+                <img class="header-logo" routerLink="/" src="../../../../assets/logo.png" alt="logo" height="80px" width="80px" >
 
                 <nav class="header-nav">
-                    <a class="header-nav-link">Проекты</a>
-                    <a class="header-nav-link">Музыка</a>
-                    <a class="header-nav-link">Эбаут</a>
-                    <a class="header-nav-link">Контакты</a>
+                    <a class="header-nav-link" routerLink="/projects">Проекты</a>
+                    <a class="header-nav-link" routerLink="/music">Музыка</a>
+                    <a class="header-nav-link" routerLink="/about">Эбаут</a>
+                    <a class="header-nav-link" routerLink="/contacts">Контакты</a>
                 </nav>
             </div>
         </div>
     </header>
 </div>
 
-<!--<div class="container">-->
-<!--    <router-outlet></router-outlet>-->
-<!--</div>-->
+<footer>
+    <div class="container">
+        <div class="contacts">
+            <img src="../../../../assets/email-white.png" alt="" height="16" width="21">
+            <a href="mailto:wokzyrg@gmail.com" class="contacts-link">wokzyrg@gmail.com</a>
+            <img src="../../../../assets/phone-white.png" alt="" height="26" width="16">
+            <a href="tel:+7(999)538-22-67" class="contacts-link">+7(999)538-22-67</a>
+        </div>
+    </div>
+</footer>
+
+<div class="container">
+    <router-outlet></router-outlet>
+</div>

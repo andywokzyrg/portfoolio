@@ -12,7 +12,7 @@ const routes: Routes = [{
         {path: '', redirectTo: '/', pathMatch: 'full'},
         {path: '', component: HomePageComponent},
         {path: 'about', component: AboutPageComponent},
-        {path: 'contact', component: ContactPageComponent},
+        {path: 'contacts', component: ContactPageComponent},
         {path: 'music', component: MusicPageComponent},
         {path: 'projects', component: ProjectsPageComponent}
     ]},
