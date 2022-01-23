@@ -40,6 +40,10 @@
     font-weight: normal;
     text-decoration: none;
     margin-left: 1rem;
+
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 .header-nav {

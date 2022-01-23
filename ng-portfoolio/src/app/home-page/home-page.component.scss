@@ -1,15 +1,16 @@
-.main-text {
-    position: absolute;
-    top: 15rem;
-    color: white;
+.content {
+    margin-top: 11rem;
+}
 
+.main-text {
+    color: white;
+    margin-bottom: 1rem;
 }
 
 .text {
-    position: absolute;
-    top: 20rem;
     color: rgb(255, 255, 255);
     max-width: 40rem;
+    margin-bottom: 1rem;
 }
 
 .me {
@@ -39,8 +40,6 @@
 }
 
 .button {
-    position: absolute;
-    top: 30rem;
     background: linear-gradient(-45deg, #3f00b5, #9f69fe, #27c8b7, #3f00b5);
     background-size: 800% 400%;
     padding: 1em 2em;
