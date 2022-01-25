@@ -1,11 +1,11 @@
 .music-content {
     margin-top: 100px;
-    width: 700px;
+    max-width: 700px;
 }
 
 .text {
     color: white;
-    max-width: 40rem;
+    //max-width: 40rem;
 }
 
 .spotify {
@@ -61,5 +61,21 @@
 #radio-2:checked {
     .spotify:first-child {
         display: none;
+    }
+}
+
+@media (max-width: 710px) {
+    .text {
+        display: none;
+    }
+
+    .music-info {
+        justify-content: end;
+    }
+}
+
+@media (max-width: 520px) {
+    .music-content {
+        margin-top: 30px;
     }
 }

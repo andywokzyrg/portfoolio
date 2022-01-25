@@ -8,6 +8,8 @@ import {Component, OnInit} from '@angular/core';
 export class MusicPageComponent implements OnInit {
 
     old = true
+
+
     constructor() {
     }
 

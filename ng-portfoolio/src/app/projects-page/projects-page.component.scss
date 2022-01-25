@@ -3,3 +3,13 @@
     margin-top: 270px;
 }
 
+@media (max-width: 520px) {
+    .text {
+        font-size: 1.5rem
+    }
+
+    .content {
+        margin-top: 30px;
+    }
+
+}

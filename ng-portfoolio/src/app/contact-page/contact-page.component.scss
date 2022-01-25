@@ -2,17 +2,33 @@
     margin-top: 220px;
 }
 
-.text {
+.main-text {
     color: white;
 }
 
 .social-icon {
-    width: 5%;
-    height: 5%;
     margin-right: 20px;
 }
 
 .social-icon:hover {
     -ms-transform: scale(1.2);
     transform: scale(1.2);
+}
+
+.contacts-list {
+    align-items: center;
+}
+
+@media (max-width: 520px) {
+    .content {
+        margin-top: 30px;
+    }
+
+    .main-text {
+        font-size: 1.5rem;
+    }
+
+    .contacts-list {
+        margin-top: 10px;
+    }
 }
