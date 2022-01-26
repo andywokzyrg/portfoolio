@@ -110,6 +110,18 @@
     }
 }
 
+@media (max-height: 650px) {
+    .contacts {
+        display: none;
+    }
+}
+
+@media (max-width: 730px){
+    .contacts {
+        display: none;
+    }
+}
+
 //
 //// burger-menu
 
