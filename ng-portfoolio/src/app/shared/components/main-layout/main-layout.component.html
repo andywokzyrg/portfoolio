@@ -6,7 +6,8 @@
                     О нет только не это
                 </div>
 
-                <img class="header-logo" routerLink="/" src="../../../../assets/logo.png" alt="logo" height="80px" width="80px" >
+                <img class="header-logo" routerLink="/" src="../../../../assets/logo.png" alt="logo" height="80px"
+                     width="80px">
 
                 <nav class="header-nav">
                     <a class="header-nav-link" routerLink="/projects">Проекты</a>
@@ -33,19 +34,26 @@
         </div>
     </footer>
 
-    <div class="hamburger-menu">
-        <input id="menu-toggle" type="checkbox"/>
-        <label class="menu-btn" for="menu-toggle">
-            <span></span>
-        </label>
-        <ul class="menu-box">
-            <li><a class="menu-item" routerLink="/">Главная</a></li>
-            <li><a class="menu-item" routerLink="/projects">Проекты</a></li>
-            <li><a class="menu-item" routerLink="/music">Музыка</a></li>
-            <li><a class="menu-item" routerLink="/about">Эбаут</a></li>
-            <li><a class="menu-item" routerLink="/contacts">Контакты</a></li>
-        </ul>
-    </div>
+        <div class="hamburger-menu">
+<!--            <button class="hamburger" type="button" (click)="toggle()">-->
+<!--                <span class="hamburger-box">-->
+<!--                    <span class="hamburger-inner"></span>-->
+<!--                </span>-->
+<!--            </button>-->
+
+            <img src="../../../../assets/hamburger.png" (click)="toggle()" class="burger" height="35" width="35" alt="">
+
+            <ul class="menu-box" [ngClass]="{active: isActive}">
+                <img class="close-button" (click)="toggle()" src="../../../../assets/close.png" alt="" height="25" width="25">
+                <li><a class="menu-item" routerLink="/" (click)="toggle()">Главная</a></li>
+                <li><a class="menu-item" routerLink="/projects" (click)="toggle()">Проекты</a></li>
+                <li><a class="menu-item" routerLink="/music" (click)="toggle()">Музыка</a></li>
+                <li><a class="menu-item" routerLink="/about" (click)="toggle()">Эбаут</a></li>
+                <li><a class="menu-item" routerLink="/contacts" (click)="toggle()">Контакты</a></li>
+            </ul>
+        </div>
+
+
 </div>
 
 

@@ -7,8 +7,7 @@ import {Component, OnInit} from '@angular/core';
 })
 export class MusicPageComponent implements OnInit {
 
-    old = true
-
+    old: boolean = true
 
     constructor() {
     }

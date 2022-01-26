@@ -1,3 +1,5 @@
+@import '~hamburgers/_sass/hamburgers/hamburgers.scss';
+
 html {
     font-size: 16px;
 }
@@ -28,11 +30,22 @@ p {
     max-width: 1300px;
     width: 100%;
 
-    @media (max-width: 1200px) {
+    @media (max-width: 1320px) {
         padding-left: 50px;
         padding-right: 50px;
     }
 }
 
+.back-button {
+    color: white;
+    position: absolute;
+    top: 100px;
+}
+
+@media (max-width: 520px) {
+    .back-button {
+        display: none;
+    }
+}
 
 
