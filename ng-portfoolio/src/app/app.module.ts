@@ -9,6 +9,10 @@ import {ContactPageComponent} from './contact-page/contact-page.component';
 import {MusicPageComponent} from './music-page/music-page.component';
 import {ProjectsPageComponent} from './projects-page/projects-page.component';
 import {HomePageComponent} from './home-page/home-page.component';
+import {ContactLinkModule} from "./shared/components/ui/contact-link/contact-link.module";
+import {ButtonModule} from "./shared/components/ui/button/button.module";
+import {IconModule} from "./shared/components/ui/icon/icon.module";
+
 
 @NgModule({
     declarations: [
@@ -18,12 +22,15 @@ import {HomePageComponent} from './home-page/home-page.component';
         ContactPageComponent,
         MusicPageComponent,
         ProjectsPageComponent,
-        HomePageComponent
+        HomePageComponent,
+
     ],
     imports: [
         BrowserModule,
         AppRoutingModule,
-
+        ContactLinkModule,
+        ButtonModule,
+        IconModule
     ],
     providers: [],
     bootstrap: [AppComponent]

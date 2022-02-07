@@ -26,21 +26,13 @@
     <footer>
         <div class="container">
             <div class="contacts">
-                <img src="../../../../assets/email-footer.png" alt="" height="16" width="21">
-                <a href="mailto:wokzyrg@gmail.com" class="contacts-link">wokzyrg@gmail.com</a>
-                <img src="../../../../assets/phone-footer.png" alt="" height="26" width="16">
-                <a href="tel:+7(999)538-22-67" class="contacts-link">+7(999)538-22-67</a>
+                <app-contact-link name="email-footer" link="mailto:wokzyrg@gmail.com" class="contacts-link">wokzyrg@gmail.com</app-contact-link>
+                <app-contact-link name="phone-footer" class="contacts-link" link="tel:7(999)538-22-67">7(999)538-22-67</app-contact-link>
             </div>
         </div>
     </footer>
 
         <div class="hamburger-menu">
-<!--            <button class="hamburger" type="button" (click)="toggle()">-->
-<!--                <span class="hamburger-box">-->
-<!--                    <span class="hamburger-inner"></span>-->
-<!--                </span>-->
-<!--            </button>-->
-
             <img src="../../../../assets/hamburger.png" (click)="toggle()" class="burger" height="35" width="35" alt="">
 
             <ul class="menu-box" [ngClass]="{active: isActive}">
@@ -52,8 +44,6 @@
                 <li><a class="menu-item" routerLink="/contacts" (click)="toggle()">Контакты</a></li>
             </ul>
         </div>
-
-
 </div>
 
 

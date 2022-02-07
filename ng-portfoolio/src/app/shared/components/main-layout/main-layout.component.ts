@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component} from '@angular/core';
 
 
 @Component({
@@ -6,16 +6,9 @@ import {Component, OnInit} from '@angular/core';
     templateUrl: './main-layout.component.html',
     styleUrls: ['./main-layout.component.scss']
 })
-export class MainLayoutComponent implements OnInit {
-
+export class MainLayoutComponent {
     isActive: boolean = false
     toggle() {
         this.isActive = !this.isActive
     }
-    constructor() {
-    }
-
-    ngOnInit(): void {
-    }
-
 }

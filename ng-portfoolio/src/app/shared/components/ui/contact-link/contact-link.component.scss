@@ -1,0 +1,16 @@
+div {
+    display: flex;
+    align-items: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    margin-left: 8px;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: rgba(38, 255, 231, 1)
+}
+

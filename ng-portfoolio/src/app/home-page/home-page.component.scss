@@ -62,12 +62,11 @@
         animation: gradient 3s infinite;
         transform: scale(0.8);
     }
-
 }
 
 @keyframes gradient {
     0% {
-        background-position: 0% 50%;
+        background-position: 0 50%;
     }
 
     50% {
@@ -75,7 +74,7 @@
     }
 
     100% {
-        background-position: 0% 50%;
+        background-position: 0 50%;
     }
 }
 

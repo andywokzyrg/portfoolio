@@ -5,28 +5,27 @@
 
 .text {
     color: white;
-    //max-width: 40rem;
 }
 
 .spotify {
     display: flex;
 }
 
-.form_radio_group {
+.form-radio-group {
     display: inline-block;
     overflow: hidden;
 }
-.form_radio_group-item {
+.form-radio-group-item {
     display: inline-block;
     float: left;
 }
-.form_radio_group input {
+.form-radio-group input {
     display: none;
 }
-.form_radio_group label {
+.form-radio-group label {
     display: inline-block;
     cursor: pointer;
-    padding: 0px 15px;
+    padding: 0 15px;
     line-height: 34px;
     border: 1px solid white;
     border-right: none;
@@ -34,15 +33,15 @@
     color: white;
 }
 
-.form_radio_group .form_radio_group-item:first-child label {
+.form-radio-group .form-radio-group-item:first-child label {
     border-radius: 6px 0 0 6px;
 }
-.form_radio_group .form_radio_group-item:last-child label {
+.form-radio-group .form-radio-group-item:last-child label {
     border-radius: 0 6px 6px 0;
     border-right: 1px solid white;
 }
 
-.form_radio_group input[type=radio]:checked + label {
+.form-radio-group input[type=radio]:checked + label {
     background: #27c8b7;
 }
 
